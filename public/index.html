@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-slate-200 flex">
+  
+  <div class="fixed flex-1 z-10 top-0 left-0 h-screen w-16 bg-white shadow-md">
+    <div 
+      class="text-white cursor-pointer my-2 mx-auto lg:w-12 lg:h-12 bg-slate-800 flex justify-center
+              items-center transition-all hover:bg-slate-800 hover:text-white rounded-2xl"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Home Dashboard"
+    >
+      <span>
+        <i class="fa-solid fa-house"></i>
+      </span>
+    </div>
+    <div 
+      class="text-slate-900 cursor-pointer my-2 mx-auto lg:w-12 lg:h-12 bg-slate-100 flex justify-center
+                items-center rounded-md transition-all hover:bg-slate-800 hover:text-white hover:rounded-2xl"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Accounts"
+    >
+      <span>
+        <i class="fa-solid fa-address-book"></i>
+      </span>
+    </div>
+    <div 
+      class="text-slate-900 cursor-pointer my-2 mx-auto lg:w-12 lg:h-12 bg-slate-100 flex justify-center
+      items-center rounded-md transition-all hover:bg-slate-800 hover:text-white hover:rounded-2xl"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Reports"
+    >
+      <span>
+        <i class="fa-solid fa-table-list"></i>
+      </span>
+    </div>
+    <div
+      class="text-slate-900 cursor-pointer my-2 mx-auto lg:w-12 lg:h-12 bg-slate-100 flex justify-center
+      items-center rounded-md transition-all hover:bg-slate-800 hover:text-white hover:rounded-2xl"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Account"
+    >
+      <span>
+        <i class="fa-solid fa-circle-user"></i>
+      </span>
+    </div>
+    <div 
+      class="text-slate-900 cursor-pointer my-2 mx-auto lg:w-12 lg:h-12 bg-slate-100 flex justify-center
+      items-center rounded-md transition-all hover:bg-slate-800 hover:text-white hover:rounded-2xl"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      title="Settings"
+    >
+      <span>
+        <i class="fa-solid fa-gear"></i>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="ml-16 w-1/6 h-screen bg-slate-50 z-0 flex flex-col py-2 px-3 shadow-md">
+    <h2 class="font-bold text-2xl">Actions</h2>
+    <div 
+      class="bg-slate-200 text-slate-800 p-2 text-center rounded-md my-2 cursor-pointer hover:bg-slate-800 transition-all
+              hover:text-white"
+    >
+      <button>Create Account</button>
+    </div>
+  </div>
+
+  <div class="w-full h-screen flex-1">
+    <div class="w-full h-12 bg-slate-50 shadow-sm p-2 flex items-center justify-end">
+      <input 
+        type="text"
+        placeholder="Search" 
+        class="text-sm p-1 w-96 border rounded-md border-slate-200"
+      />
+      <button class="h-8 w-8 mx-2 rounded-full bg-slate-200 hover:bg-slate-300 transition-all">
+        <span>
+          <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+        </span>
+      </button>
+    </div>
+
+
+    <div class="p-2 h-[90%] overflow-y-auto">
+
+      <div class="flex my-2 justify-between">
+        <h2 class="text-2xl font-bold">Visitor Requests</h2>
+        <div class="">
+          <button class="border bg-slate-800 hover:bg-slate-700 text-white border-slate-800 py-1 px-4 rounded-md transition-all">
+            Approve All
+          </button>
+          <button class="border border-red-800 hover:bg-red-700 bg-red-800 text-white py-1 px-4 rounded-md transition-all">
+            Delete All
+          </button>
+        </div>
+      </div>
+
+
+      <div class="w-full h-80 overflow-y-scroll">
+        <div class="bg-slate-800 text-white flex my-2 rounded-md sticky top-0">
+          <div class="p-2 flex-1 text-center">ID</div>
+          <div class="p-2 flex-1 text-center">First Name</div>
+          <div class="p-2 flex-1 text-center">Last Name</div>
+          <div class="p-2 flex-1 text-center">Email</div>
+          <div class="p-2 flex-1 text-center">Date</div>
+          <div class="p-2 flex-1 text-center"></div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">0</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">1</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">2</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">3</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">4</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">5</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">6</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+        <div class="bg-white text-slate-800 flex my-2 rounded-md shadow-lg">
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">7</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem Ipsum</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">Lorem@Ipsum.com</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">May 12, 2022</div>
+          <div class="p-3 flex-1 flex justify-center items-center text-ellipsis">
+            <button
+              class="rounded-md bg-slate-800 py-1 px-3 text-white hover:bg-slate-700 transition-all"
+            >
+              Approve
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 w-full bg-slate-50 cursor-pointer text-center hover:bg-slate-100 transition-all ">
+        See All Requests
+      </div>
+
+      <div class="flex my-4">
+        <div class="h-36 flex-1 bg-white rounded-md shadow-lg p-3 border-l-2 border-slate-800">
+          <h2 class="font-bold text-2xl">
+            Content
+          </h2>
+        </div>
+        <div class="h-36 flex-1 bg-white ml-3 rounded-md shadow-lg p-3 border-l-2 border-slate-800">
+          <h2 class="font-bold text-2xl">
+            Content
+          </h2>
+        </div>
+        <div class="h-36 flex-1 bg-white ml-3 rounded-md shadow-lg p-3 border-l-2 border-slate-800">
+          <h2 class="font-bold text-2xl">
+            Content
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Required popper.js -->
+<script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new Tooltip(tooltipTriggerEl);
+  });
+</script>
+</body>
+</html>
